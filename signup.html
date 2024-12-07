@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart login system</title>
+
+    <link rel="icon" href="images/login.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-bs-theme="dark" class="bg-info-subtle">
+    <!-- <form> -->
+
+    <div
+      class="container mx-auto bg-dark border border-info-subtle rounded-4 p-4 shadow text-center"
+    >
+      <h1 class="text-center mt-2 mb-5 text-info display-6 fw-bold">
+        Smart Login System
+      </h1>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control border-info-subtle"
+          id="signUpName"
+          placeholder=""
+        />
+        <i class="fa-solid fa-check position-absolute text-success d-none"></i>
+        <label for="signUpName" class="text-info-emphasis">Your Name </label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control border-info-subtle"
+          id="signUpEmail"
+          placeholder=""
+        />
+        <i class="fa-solid fa-check position-absolute text-success d-none"></i>
+        <label for="signUpEmail" class="text-info-emphasis">Your Email </label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          class="form-control border-info-subtle position-relative"
+          id="signUpPassword"
+          placeholder=""
+        />
+        <i class="fa-solid fa-check position-absolute text-success d-none"></i>
+        <label for="signUpPassword" class="text-info-emphasis">
+          Password
+        </label>
+      </div>
+      <span class="text-danger" id="requiredInputs">All Fields Required</span>
+      <span class="text-danger" id="existEmail">email is already exist</span>
+      <span class="text-success">Success</span>
+      <div class="d-flex justify-content-center">
+        <button
+          type="submit"
+          class="btn btn-outline-info px-5 py-2 mt-5 rounded-pill"
+          id="signUpBtn"
+          onclick="signUp()"
+        >
+          Sign Up
+        </button>
+      </div>
+
+      <div class="accountSignin text-center mt-4">
+        <p>
+          You have an account?
+          <a href="index.html" class="text-info fw-norml text-decoration-none"
+            >Signin</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- </form> -->
+
+    <!-- <js bootstrap> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- </js bootstrap> -->
+
+    <!-- <js> -->
+
+    <script src="js/index.js"></script>
+
+    <!-- </js> -->
+  </body>
+</html>
